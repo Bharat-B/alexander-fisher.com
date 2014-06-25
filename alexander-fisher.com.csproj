@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{99BE8ABC-7694-4F67-81ED-E9A0C8B7BE3A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="bower_components\durandal\Changes.txt" />
+    <Content Include="bower_components\durandal\css\durandal.css" />
+    <Content Include="bower_components\durandal\img\icon.png" />
+    <Content Include="bower_components\durandal\img\ios-startup-image-landscape.png" />
+    <Content Include="bower_components\durandal\img\ios-startup-image-portrait.png" />
+    <Content Include="bower_components\durandal\js\activator.js" />
+    <Content Include="bower_components\durandal\js\app.js" />
+    <Content Include="bower_components\durandal\js\binder.js" />
+    <Content Include="bower_components\durandal\js\composition.js" />
+    <Content Include="bower_components\durandal\js\events.js" />
+    <Content Include="bower_components\durandal\js\plugins\dialog.js" />
+    <Content Include="bower_components\durandal\js\plugins\history.js" />
+    <Content Include="bower_components\durandal\js\plugins\http.js" />
+    <Content Include="bower_components\durandal\js\plugins\observable.js" />
+    <Content Include="bower_components\durandal\js\plugins\router.js" />
+    <Content Include="bower_components\durandal\js\plugins\serializer.js" />
+    <Content Include="bower_components\durandal\js\plugins\widget.js" />
+    <Content Include="bower_components\durandal\js\system.js" />
+    <Content Include="bower_components\durandal\js\transitions\entrance.js" />
+    <Content Include="bower_components\durandal\js\viewEngine.js" />
+    <Content Include="bower_components\durandal\js\viewLocator.js" />
+    <Content Include="bower_components\durandal\License.txt" />
+    <Content Include="bower_components\jquery\.gitattributes" />
+    <Content Include="bower_components\jquery\.gitignore" />
+    <Content Include="bower_components\jquery\.gitmodules" />
+    <Content Include="bower_components\jquery\AUTHORS.txt" />
+    <Content Include="bower_components\jquery\build\release-notes.js" />
+    <Content Include="bower_components\jquery\build\release.js" />
+    <Content Include="bower_components\jquery\Gruntfile.js" />
+    <Content Include="bower_components\jquery\jquery-migrate.js" />
+    <Content Include="bower_components\jquery\jquery-migrate.min.js" />
+    <Content Include="bower_components\jquery\jquery.js" />
+    <Content Include="bower_components\jquery\jquery.min.js" />
+    <Content Include="bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="bower_components\jquery\speed\benchmark.js" />
+    <Content Include="bower_components\jquery\speed\benchmarker.css" />
+    <Content Include="bower_components\jquery\speed\benchmarker.js" />
+    <Content Include="bower_components\jquery\speed\closest.html" />
+    <Content Include="bower_components\jquery\speed\css.html" />
+    <Content Include="bower_components\jquery\speed\event.html" />
+    <Content Include="bower_components\jquery\speed\filter.html" />
+    <Content Include="bower_components\jquery\speed\find.html" />
+    <Content Include="bower_components\jquery\speed\index.html" />
+    <Content Include="bower_components\jquery\speed\jquery-basis.js" />
+    <Content Include="bower_components\jquery\speed\slice.vs.concat.html" />
+    <Content Include="bower_components\jquery\src\ajax.js" />
+    <Content Include="bower_components\jquery\src\ajax\jsonp.js" />
+    <Content Include="bower_components\jquery\src\ajax\script.js" />
+    <Content Include="bower_components\jquery\src\ajax\xhr.js" />
+    <Content Include="bower_components\jquery\src\attributes.js" />
+    <Content Include="bower_components\jquery\src\callbacks.js" />
+    <Content Include="bower_components\jquery\src\core.js" />
+    <Content Include="bower_components\jquery\src\css.js" />
+    <Content Include="bower_components\jquery\src\data.js" />
+    <Content Include="bower_components\jquery\src\deferred.js" />
+    <Content Include="bower_components\jquery\src\deprecated.js" />
+    <Content Include="bower_components\jquery\src\dimensions.js" />
+    <Content Include="bower_components\jquery\src\effects.js" />
+    <Content Include="bower_components\jquery\src\event-alias.js" />
+    <Content Include="bower_components\jquery\src\event.js" />
+    <Content Include="bower_components\jquery\src\exports.js" />
+    <Content Include="bower_components\jquery\src\intro.js" />
+    <Content Include="bower_components\jquery\src\manipulation.js" />
+    <Content Include="bower_components\jquery\src\offset.js" />
+    <Content Include="bower_components\jquery\src\outro.js" />
+    <Content Include="bower_components\jquery\src\queue.js" />
+    <Content Include="bower_components\jquery\src\serialize.js" />
+    <Content Include="bower_components\jquery\src\sizzle-jquery.js" />
+    <Content Include="bower_components\jquery\src\support.js" />
+    <Content Include="bower_components\jquery\src\traversing.js" />
+    <Content Include="bower_components\jquery\test\data\1x1.jpg" />
+    <Content Include="bower_components\jquery\test\data\ajax\unreleasedXHR.html" />
+    <Content Include="bower_components\jquery\test\data\badcall.js" />
+    <Content Include="bower_components\jquery\test\data\badjson.js" />
+    <Content Include="bower_components\jquery\test\data\cleanScript.html" />
+    <Content Include="bower_components\jquery\test\data\core\cc_on.html" />
+    <Content Include="bower_components\jquery\test\data\dashboard.xml" />
+    <Content Include="bower_components\jquery\test\data\dimensions\documentLarge.html" />
+    <Content Include="bower_components\jquery\test\data\dimensions\documentSmall.html" />
+    <Content Include="bower_components\jquery\test\data\event\promiseReady.html" />
+    <Content Include="bower_components\jquery\test\data\event\syncReady.html" />
+    <Content Include="bower_components\jquery\test\data\iframe.html" />
+    <Content Include="bower_components\jquery\test\data\jquery-1.8.2.ajax_xhr.min.js" />
+    <Content Include="bower_components\jquery\test\data\json_obj.js" />
+    <Content Include="bower_components\jquery\test\data\manipulation\iframe-denied.html" />
+    <Content Include="bower_components\jquery\test\data\name.html" />
+    <Content Include="bower_components\jquery\test\data\offset\absolute.html" />
+    <Content Include="bower_components\jquery\test\data\offset\body.html" />
+    <Content Include="bower_components\jquery\test\data\offset\fixed.html" />
+    <Content Include="bower_components\jquery\test\data\offset\relative.html" />
+    <Content Include="bower_components\jquery\test\data\offset\scroll.html" />
+    <Content Include="bower_components\jquery\test\data\offset\static.html" />
+    <Content Include="bower_components\jquery\test\data\offset\table.html" />
+    <Content Include="bower_components\jquery\test\data\readywaitasset.js" />
+    <Content Include="bower_components\jquery\test\data\readywaitloader.js" />
+    <Content Include="bower_components\jquery\test\data\selector\html5_selector.html" />
+    <Content Include="bower_components\jquery\test\data\selector\sizzle_cache.html" />
+    <Content Include="bower_components\jquery\test\data\support\bodyBackground.html" />
+    <Content Include="bower_components\jquery\test\data\support\shrinkWrapBlocks.html" />
+    <Content Include="bower_components\jquery\test\data\support\testElementCrash.html" />
+    <Content Include="bower_components\jquery\test\data\test.html" />
+    <Content Include="bower_components\jquery\test\data\test.js" />
+    <Content Include="bower_components\jquery\test\data\test2.html" />
+    <Content Include="bower_components\jquery\test\data\test3.html" />
+    <Content Include="bower_components\jquery\test\data\testinit.js" />
+    <Content Include="bower_components\jquery\test\data\testrunner.js" />
+    <Content Include="bower_components\jquery\test\data\testsuite.css" />
+    <Content Include="bower_components\jquery\test\data\ua.txt" />
+    <Content Include="bower_components\jquery\test\data\with_fries.xml" />
+    <Content Include="bower_components\jquery\test\delegatetest.html" />
+    <Content Include="bower_components\jquery\test\hovertest.html" />
+    <Content Include="bower_components\jquery\test\index.html" />
+    <Content Include="bower_components\jquery\test\localfile.html" />
+    <Content Include="bower_components\jquery\test\networkerror.html" />
+    <Content Include="bower_components\jquery\test\readywait.html" />
+    <Content Include="bower_components\jquery\test\unit\ajax.js" />
+    <Content Include="bower_components\jquery\test\unit\attributes.js" />
+    <Content Include="bower_components\jquery\test\unit\callbacks.js" />
+    <Content Include="bower_components\jquery\test\unit\core.js" />
+    <Content Include="bower_components\jquery\test\unit\css.js" />
+    <Content Include="bower_components\jquery\test\unit\data.js" />
+    <Content Include="bower_components\jquery\test\unit\deferred.js" />
+    <Content Include="bower_components\jquery\test\unit\deprecated.js" />
+    <Content Include="bower_components\jquery\test\unit\dimensions.js" />
+    <Content Include="bower_components\jquery\test\unit\effects.js" />
+    <Content Include="bower_components\jquery\test\unit\event.js" />
+    <Content Include="bower_components\jquery\test\unit\exports.js" />
+    <Content Include="bower_components\jquery\test\unit\manipulation.js" />
+    <Content Include="bower_components\jquery\test\unit\offset.js" />
+    <Content Include="bower_components\jquery\test\unit\queue.js" />
+    <Content Include="bower_components\jquery\test\unit\selector.js" />
+    <Content Include="bower_components\jquery\test\unit\serialize.js" />
+    <Content Include="bower_components\jquery\test\unit\support.js" />
+    <Content Include="bower_components\jquery\test\unit\traversing.js" />
+    <Content Include="bower_components\knockout.js\knockout.debug.js" />
+    <Content Include="bower_components\knockout.js\knockout.js" />
+    <Content Include="bower_components\requirejs-text\text.js" />
+    <Content Include="bower_components\requirejs\require.js" />
+    <Content Include="index.html" />
+    <Content Include="src\main.js" />
+    <Content Include="src\main.ts" />
+    <Content Include="src\shell.html" />
+    <Content Include="src\shell.js" />
+    <Content Include="src\shell.ts" />
+    <TypeScriptCompile Include="typings\durandal\durandal.d.ts" />
+    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="typings\knockout\knockout.d.ts" />
+    <TypeScriptCompile Include="typings\requirejs\require.d.ts" />
+    <TypeScriptCompile Include="typings\sammyjs\sammyjs.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\main.js.map" />
+    <Content Include="src\shell.js.map" />
+    <Content Include="bower_components\durandal\.bower.json" />
+    <Content Include="bower_components\durandal\bower.json" />
+    <Content Include="bower_components\durandal\README.md" />
+    <Content Include="bower_components\jquery\.bower.json" />
+    <Content Include="bower_components\jquery\.editorconfig" />
+    <Content Include="bower_components\jquery\.jshintrc" />
+    <Content Include="bower_components\jquery\component.json" />
+    <Content Include="bower_components\jquery\composer.json" />
+    <Content Include="bower_components\jquery\CONTRIBUTING.md" />
+    <Content Include="bower_components\jquery\jquery.min.map" />
+    <Content Include="bower_components\jquery\package.json" />
+    <Content Include="bower_components\jquery\README.md" />
+    <Content Include="bower_components\jquery\src\.jshintrc" />
+    <Content Include="bower_components\jquery\test\.jshintignore" />
+    <Content Include="bower_components\jquery\test\.jshintrc" />
+    <Content Include="bower_components\jquery\test\csp.php" />
+    <Content Include="bower_components\jquery\test\data\atom+xml.php" />
+    <Content Include="bower_components\jquery\test\data\echoData.php" />
+    <Content Include="bower_components\jquery\test\data\echoQuery.php" />
+    <Content Include="bower_components\jquery\test\data\errorWithText.php" />
+    <Content Include="bower_components\jquery\test\data\etag.php" />
+    <Content Include="bower_components\jquery\test\data\evalScript.php" />
+    <Content Include="bower_components\jquery\test\data\event\longLoadScript.php" />
+    <Content Include="bower_components\jquery\test\data\headers.php" />
+    <Content Include="bower_components\jquery\test\data\if_modified_since.php" />
+    <Content Include="bower_components\jquery\test\data\json.php" />
+    <Content Include="bower_components\jquery\test\data\jsonp.php" />
+    <Content Include="bower_components\jquery\test\data\name.php" />
+    <Content Include="bower_components\jquery\test\data\nocontent.php" />
+    <Content Include="bower_components\jquery\test\data\params_html.php" />
+    <Content Include="bower_components\jquery\test\data\script.php" />
+    <Content Include="bower_components\jquery\test\data\statusText.php" />
+    <Content Include="bower_components\jquery\test\data\test.php" />
+    <Content Include="bower_components\jquery\test\data\text.php" />
+    <Content Include="bower_components\jquery\test\data\with_fries_over_jsonp.php" />
+    <Content Include="bower_components\jquery\test\polluted.php" />
+    <Content Include="bower_components\jquery\test\xhtml.php" />
+    <Content Include="bower_components\knockout.js\.bower.json" />
+    <Content Include="bower_components\knockout.js\bower.json" />
+    <Content Include="bower_components\knockout.js\README.md" />
+    <Content Include="bower_components\requirejs-text\.bower.json" />
+    <Content Include="bower_components\requirejs-text\LICENSE" />
+    <Content Include="bower_components\requirejs-text\package.json" />
+    <Content Include="bower_components\requirejs-text\README.md" />
+    <Content Include="bower_components\requirejs\.bower.json" />
+    <Content Include="bower_components\requirejs\bower.json" />
+    <Content Include="bower_components\requirejs\README.md" />
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="tsd.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bower_components\jquery\src\sizzle\" />
+    <Folder Include="bower_components\jquery\test\qunit\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>alexander_fisher.com</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26745</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1224/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

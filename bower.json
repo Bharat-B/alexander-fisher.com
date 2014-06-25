@@ -6,7 +6,6 @@
     "Alexander Fisher <afisher@alexander-fisher.com>"
   ],
   "description": "Portfolio Site",
-  "main": "index.js",
   "license": "MIT",
   "private": true,
   "ignore": [
