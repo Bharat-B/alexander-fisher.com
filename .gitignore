@@ -5,3 +5,5 @@ bower_components
 *.suo
 bin
 obj
+typings
+*.js*

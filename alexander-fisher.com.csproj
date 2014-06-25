@@ -162,12 +162,6 @@
     <Content Include="src\shell.html" />
     <Content Include="src\shell.js" />
     <Content Include="src\shell.ts" />
-    <TypeScriptCompile Include="typings\durandal\durandal.d.ts" />
-    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="typings\knockout\knockout.d.ts" />
-    <TypeScriptCompile Include="typings\requirejs\require.d.ts" />
-    <TypeScriptCompile Include="typings\sammyjs\sammyjs.d.ts" />
-    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\main.js.map" />
