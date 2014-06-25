@@ -1,0 +1,22 @@
+{
+  "name": "alexander-fisher.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pixelshaded/alexander-fisher.com",
+  "authors": [
+    "Alexander Fisher <afisher@alexander-fisher.com>"
+  ],
+  "description": "Portfolio Site",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "durandal": "~2.1.0"
+  }
+}
