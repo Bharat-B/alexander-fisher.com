@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "Alexander-Fisher-Flux-React",
   "version": "1.0.0",
   "devDependencies": {
     "babel-core": "^6.4.5",
@@ -16,7 +16,8 @@
   "scripts": {
     "tsd": "tsd",
     "webpack": "webpack",
-    "webpack-dev-server": "webpack-dev-server"
+    "webpack-dev-server": "webpack-dev-server",
+    "postinstall": "tsd install && webpack"
   },
   "dependencies": {
     "react": "^0.14.6",
