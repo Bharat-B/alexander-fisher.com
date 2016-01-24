@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'webpack-dev-server',
+1 verbose cli   '--',
+1 verbose cli   '--content-base',
+1 verbose cli   './dist' ]
+2 info using npm@3.5.3
+3 info using node@v0.10.35
+4 verbose run-script [ 'prewebpack-dev-server',
+4 verbose run-script   'webpack-dev-server',
+4 verbose run-script   'postwebpack-dev-server' ]
+5 info lifecycle Alexander-Fisher-Flux-React@1.0.0~prewebpack-dev-server: Alexander-Fisher-Flux-React@1.0.0
+6 silly lifecycle Alexander-Fisher-Flux-React@1.0.0~prewebpack-dev-server: no script for prewebpack-dev-server, continuing
+7 info lifecycle Alexander-Fisher-Flux-React@1.0.0~webpack-dev-server: Alexander-Fisher-Flux-React@1.0.0
+8 verbose lifecycle Alexander-Fisher-Flux-React@1.0.0~webpack-dev-server: unsafe-perm in lifecycle true
+9 verbose lifecycle Alexander-Fisher-Flux-React@1.0.0~webpack-dev-server: PATH: /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/bin/node-gyp-bin:/home/ubuntu/workspace/flux-react/node_modules/.bin:/home/ubuntu/.nvm/v0.10.35/bin:/usr/local/rvm/gems/ruby-2.2.1/bin:/usr/local/rvm/gems/ruby-2.2.1@global/bin:/usr/local/rvm/rubies/ruby-2.2.1/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin
+10 verbose lifecycle Alexander-Fisher-Flux-React@1.0.0~webpack-dev-server: CWD: /home/ubuntu/workspace/flux-react
+11 silly lifecycle Alexander-Fisher-Flux-React@1.0.0~webpack-dev-server: Args: [ '-c',
+11 silly lifecycle   'webpack-dev-server --host $IP --port $PORT "--content-base" "./dist"' ]
+12 silly lifecycle Alexander-Fisher-Flux-React@1.0.0~webpack-dev-server: Returned: code: 137  signal: null
+13 info lifecycle Alexander-Fisher-Flux-React@1.0.0~webpack-dev-server: Failed to exec webpack-dev-server script
+14 verbose stack Error: Alexander-Fisher-Flux-React@1.0.0 webpack-dev-server: `webpack-dev-server --host $IP --port $PORT "--content-base" "./dist"`
+14 verbose stack Exit status 137
+14 verbose stack     at EventEmitter.<anonymous> (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
+14 verbose stack     at EventEmitter.emit (events.js:98:17)
+14 verbose stack     at ChildProcess.<anonymous> (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at ChildProcess.emit (events.js:98:17)
+14 verbose stack     at maybeClose (child_process.js:766:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
+15 verbose pkgid Alexander-Fisher-Flux-React@1.0.0
+16 verbose cwd /home/ubuntu/workspace/flux-react
+17 error Linux 4.2.0-c9
+18 error argv "node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "run" "webpack-dev-server" "--" "--content-base" "./dist"
+19 error node v0.10.35
+20 error npm  v3.5.3
+21 error code ELIFECYCLE
+22 error Alexander-Fisher-Flux-React@1.0.0 webpack-dev-server: `webpack-dev-server --host $IP --port $PORT "--content-base" "./dist"`
+22 error Exit status 137
+23 error Failed at the Alexander-Fisher-Flux-React@1.0.0 webpack-dev-server script 'webpack-dev-server --host $IP --port $PORT "--content-base" "./dist"'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the Alexander-Fisher-Flux-React package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     webpack-dev-server --host $IP --port $PORT "--content-base" "./dist"
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs Alexander-Fisher-Flux-React
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls Alexander-Fisher-Flux-React
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

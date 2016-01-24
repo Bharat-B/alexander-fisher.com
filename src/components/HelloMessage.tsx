@@ -10,7 +10,7 @@ interface State {
 
 class HelloMessage extends React.Component<Props, State> {
   render() {
-    return <div>Hello {this.props.name}</div>;
+    return <div>Whaddup {this.props.name}?</div>;
   }
 }
 
