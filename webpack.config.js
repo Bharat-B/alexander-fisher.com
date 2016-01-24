@@ -1,3 +1,10 @@
+var packageConfig = require('./package.json');
+var serverExternals = {};
+
+for (var key in packageConfig.dependencies) {
+  serverExternals[key] = "commonsjs " + key;
+}
+
 module.exports = [
   {
     name: 'client',
@@ -44,9 +51,7 @@ module.exports = [
         '.tsx'
       ]
     },
-    externals: {
-      express: "commonjs express"
-    },
+    externals: serverExternals,
     module: {
       loaders: [
         {
