@@ -18,7 +18,7 @@
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server --host $IP --port $PORT",
     "postinstall": "tsd install && webpack",
-    "start": "node server/main.js"
+    "start": "node dist/server.bundle.js"
   },
   "dependencies": {
     "express": "^4.13.4",

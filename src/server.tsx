@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express();
+import * as express from 'express';
+let app = express();
 
 app.use(express.static('dist'));
 app.use(express.static('static'));
