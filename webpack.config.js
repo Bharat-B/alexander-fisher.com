@@ -1,23 +1,26 @@
+var path = require('path');
 var packageConfig = require('./package.json');
 var serverExternals = {};
 
 for (var key in packageConfig.dependencies) {
-  serverExternals[key] = "commonsjs " + key;
+  serverExternals[key] = "commonjs " + key;
 }
 
 module.exports = [
   {
     name: 'client',
-    entry: './src/client',
+    entry: path.resolve(__dirname, 'src/client'),
     target: 'web',
     output: {
-      path: __dirname + '/dist',
+      path: path.resolve(__dirname, 'dist'),
       filename: 'client.bundle.js'
     },
     resolve: {
       extensions: [
+        '',
         '.ts',
-        '.tsx'
+        '.tsx',
+        '.scss'
       ]
     },
     externals: {
@@ -31,18 +34,18 @@ module.exports = [
           loader: 'babel-loader!ts-loader'
         },
         {
-          test: /\.css$/,
-          loader: 'style!css'
+          test: /\.scss$/,
+          loader: 'style-loader!css-loader!sass-loader'
         }
       ]
     }
   },
   {
     name: 'server',
-    entry: './src/server',
+    entry: path.resolve(__dirname, 'src/server'),
     target: 'node',
     output: {
-      path: __dirname + '/dist',
+      path: path.resolve(__dirname, 'dist'),
       filename: 'server.bundle.js'
     },
     resolve: {
