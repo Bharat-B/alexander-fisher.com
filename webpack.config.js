@@ -1,13 +1,25 @@
 module.exports = {
-  entry: "./entry.js",
+  entry: "./src/client/entry.tsx",
   output: {
-    path: __dirname,
-    filename: "bundle.js"
+    filename: "client.js",
+    path: __dirname + "/dist"
+  },
+  devtool: "source-map",
+  resolve: {
+    extensions: [".tsx"]
   },
   module: {
     loaders: [{
-      test: /\.css$/,
-      loader: "style!css"
+      test: /\.tsx?$/,
+      loader: "awesome-typescript-loader"
+    }],
+    preLoaders: [{
+      test: /\.js$/,
+      loader: "source-map-loader"
     }]
-  }
+  },
+  externals: {
+    "react": "React",
+    "react-dom": "ReactDOM"
+  },
 };
