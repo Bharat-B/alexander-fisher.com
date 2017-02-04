@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./src/client/entry.tsx",
+  entry: ["./src/client/entry.tsx"],
   output: {
     filename: "client.js",
     path: __dirname + "/dist"
@@ -20,9 +20,5 @@ module.exports = {
         use: ["ts-loader"]
       }
     ]
-  },
-  externals: {
-    "react": "React",
-    "react-dom": "ReactDOM"
-  },
+  }
 };

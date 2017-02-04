@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "typings": "typings"
+    "typings": "typings",
+    "tsc": "tsc",
+    "build:server": "tsc --jsx react --outDir dist src/server/server.tsx",
+    "build:client": "webpack",
+    "server": "node dist/server"
   },
   "repository": "git+https://github.com/pixelshaded/alexander-fisher.com.git",
   "author": "Alexander Fisher",
@@ -14,13 +18,23 @@
     "url": "https://github.com/pixelshaded/alexander-fisher.com/issues"
   },
   "homepage": "https://github.com/pixelshaded/alexander-fisher.com#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/react-router": "^3.0.0"
+  },
   "devDependencies": {
+    "@types/express": "4.0.35",
     "@types/react": "15.0.6",
     "@types/react-dom": "0.14.22",
+    "@types/react-redux": "4.4.36",
+    "@types/react-router-redux": "4.0.39",
+    "@types/redux": "3.6.0",
     "awesome-typescript-loader": "3.0.0-beta.18",
+    "express": "4.14.1",
     "react": "15.4.2",
     "react-dom": "15.4.2",
+    "react-redux": "5.0.2",
+    "react-router": "3.0.2",
+    "react-router-redux": "4.0.7",
     "source-map-loader": "0.1.6",
     "ts-loader": "2.0.0",
     "typescript": "2.1.5",
